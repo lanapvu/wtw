@@ -11,7 +11,7 @@ import SwiftUI
 struct wtwApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartUpView()
         }
     }
 }
