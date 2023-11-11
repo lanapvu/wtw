@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		52462D362B00068B00B63921 /* wtwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D352B00068B00B63921 /* wtwApp.swift */; };
-		52462D382B00068B00B63921 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D372B00068B00B63921 /* ContentView.swift */; };
+		52462D382B00068B00B63921 /* StartUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D372B00068B00B63921 /* StartUpView.swift */; };
 		52462D3A2B00068D00B63921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462D392B00068D00B63921 /* Assets.xcassets */; };
 		52462D3D2B00068D00B63921 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462D3C2B00068D00B63921 /* Preview Assets.xcassets */; };
 		52462D472B00068D00B63921 /* wtwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D462B00068D00B63921 /* wtwTests.swift */; };
 		52462D512B00068D00B63921 /* wtwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D502B00068D00B63921 /* wtwUITests.swift */; };
 		52462D532B00068D00B63921 /* wtwUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */; };
 		52E604CE2B00185F00814C5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604CD2B00185F00814C5F /* HomeView.swift */; };
+		52E604D02B001A7100814C5F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604CF2B001A7100814C5F /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		52462D322B00068B00B63921 /* wtw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wtw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52462D352B00068B00B63921 /* wtwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwApp.swift; sourceTree = "<group>"; };
-		52462D372B00068B00B63921 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52462D372B00068B00B63921 /* StartUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpView.swift; sourceTree = "<group>"; };
 		52462D392B00068D00B63921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52462D3C2B00068D00B63921 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52462D422B00068D00B63921 /* wtwTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wtwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +47,7 @@
 		52462D502B00068D00B63921 /* wtwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwUITests.swift; sourceTree = "<group>"; };
 		52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52E604CD2B00185F00814C5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		52E604CF2B001A7100814C5F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +134,9 @@
 		52E604CC2B00184F00814C5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				52462D372B00068B00B63921 /* ContentView.swift */,
+				52462D372B00068B00B63921 /* StartUpView.swift */,
 				52E604CD2B00185F00814C5F /* HomeView.swift */,
+				52E604CF2B001A7100814C5F /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,8 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E604D02B001A7100814C5F /* ProfileView.swift in Sources */,
 				52E604CE2B00185F00814C5F /* HomeView.swift in Sources */,
-				52462D382B00068B00B63921 /* ContentView.swift in Sources */,
+				52462D382B00068B00B63921 /* StartUpView.swift in Sources */,
 				52462D362B00068B00B63921 /* wtwApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
