@@ -14,6 +14,7 @@
 		52462D472B00068D00B63921 /* wtwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D462B00068D00B63921 /* wtwTests.swift */; };
 		52462D512B00068D00B63921 /* wtwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D502B00068D00B63921 /* wtwUITests.swift */; };
 		52462D532B00068D00B63921 /* wtwUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */; };
+		52E604CE2B00185F00814C5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604CD2B00185F00814C5F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		52462D4C2B00068D00B63921 /* wtwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wtwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52462D502B00068D00B63921 /* wtwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwUITests.swift; sourceTree = "<group>"; };
 		52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52E604CD2B00185F00814C5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		52462D342B00068B00B63921 /* wtw */ = {
 			isa = PBXGroup;
 			children = (
+				52E604CC2B00184F00814C5F /* Views */,
 				52462D352B00068B00B63921 /* wtwApp.swift */,
-				52462D372B00068B00B63921 /* ContentView.swift */,
 				52462D392B00068D00B63921 /* Assets.xcassets */,
 				52462D3B2B00068D00B63921 /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */,
 			);
 			path = wtwUITests;
+			sourceTree = "<group>";
+		};
+		52E604CC2B00184F00814C5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52462D372B00068B00B63921 /* ContentView.swift */,
+				52E604CD2B00185F00814C5F /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E604CE2B00185F00814C5F /* HomeView.swift in Sources */,
 				52462D382B00068B00B63921 /* ContentView.swift in Sources */,
 				52462D362B00068B00B63921 /* wtwApp.swift in Sources */,
 			);
