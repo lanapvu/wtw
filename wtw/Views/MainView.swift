@@ -2,14 +2,83 @@
 //  MainView.swift
 //  wtw
 //
-//  Created by Hanabel Mengistu on 11/12/23.
+//  Created by lordpoo on 11/12/23.
 //
 
 import SwiftUI
+struct Post: Identifiable {
+    let id = UUID()
+    let category: String
+    let username: String
+    let profilePictureName: String
+    let timePosted: String
+    let message: String
+    let distance: String
+    let priceCategory: String
+}
 
 struct MainView: View {
+    // Sample posts data
+    let posts: [Post] = [
+        Post(category: "Hiking", username: "Lord", profilePictureName: "profile1", timePosted: "10 mins ago", message: "Hey guys! I'm going to mount sugarloaf soon on the B40 bus line. I'm leaving in 20 mins. Lmk if you want to come!", distance: "0.3 mi", priceCategory: "$"),
+        // Add more Post instances here...
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(posts) { post in
+                PostRow(post: post)
+            }
+            .navigationTitle("wtw")
+            .toolbar {
+                // Add the plus button here
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {}) {
+                        Image(systemName: "plus")
+                    }
+                }
+                // Add other toolbar items if needed
+            }
+        }
+        .tabItem {
+            Image(systemName: "house.fill")
+            Text("Home")
+        }
+    }
+}
+
+struct PostRow: View {
+    var post: Post
+    
+    var body: some View {
+        HStack(alignment: .top) {
+            VStack(alignment: .leading) {
+                Text(post.category)
+                    .font(.headline)
+                    .padding(.bottom, 1)
+                Text(post.message)
+                    .font(.subheadline)
+                HStack {
+                    Text(post.username)
+                        .font(.caption)
+                    Spacer()
+                    Text(post.timePosted)
+                        .font(.caption)
+                }
+            }
+            Spacer()
+            Image(post.profilePictureName) // Use the actual image resource
+                .resizable()
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+        }
+    }
+}
+
+// Implement a preview for SwiftUI canvas
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
     }
 }
 
