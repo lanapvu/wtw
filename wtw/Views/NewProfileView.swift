@@ -24,6 +24,8 @@ struct NewProfileView: View {
                 .offset(CGSize(width: 10.0, height: 10.0))
             Spacer()
             Interests()
+                .offset(CGSize(width: 10.0, height: 10.0))
+            Spacer()
         }
         
     }
@@ -37,9 +39,9 @@ struct CircleImage: View{
             .frame(width: 400, height: 100)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay(Circle().stroke(.gray, lineWidth:4))
-        Text("Lord")
+        Text("Lord Custodio")
             .font(.system(size: 20))
-            .padding(.leading, 170)
+            .padding(.leading, 130)
         Text("he/him")
             .padding(.leading, 163)
         HStack {
@@ -57,11 +59,38 @@ struct Interests:View{
     var body: some View{
         Text("Interests")
             .font(.title)
+            .padding()
+        HStack {
+        InterestBubble(text: "Movies")
+        InterestBubble(text: "Hiking")
+        InterestBubble(text: "Concerts")
+        InterestBubble(text: "Dinner")
+        }
+        Spacer()
+        
+    }
+}
+struct InterestBubble: View {
+    var text: String
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color.green)
+                .frame(width: 80, height: 40)
+            Text(text)
+                .foregroundColor(.white)
+                .padding()
+        }
     }
 }
 
 #Preview {
     NewProfileView()
+}
+
+#Preview {
+    Interests()
 }
 
 
