@@ -1,26 +1,41 @@
-//
-//  ContentView.swift
-//  wtw
-//
-//  Created by Lord Custodio on 11/11/23.
-//
-
 import SwiftUI
 
 struct StartUpView: View {
+    @State private var isActive = false
+
     var body: some View {
-        VStack {
-                    Spacer()
-        Image("Logo") // Replace "your_image_name" with the actual name of your PNG file
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 400, height: 100) // Adjust the size as needed
-                    Spacer()
+        NavigationView {
+            VStack {
+                Spacer()
+                Image("Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 400, height: 100)
+                Spacer()
+            }
+            .background(Color(UIColor(hex: 0xD2EADB)))
+            .edgesIgnoringSafeArea(.all)
+            .onAppear {
+                // Add a 3-second delay
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    isActive = true
                 }
-                .background(Color(UIColor(hex: 0xD2EADB))) // Replace with your desired hex color
-                .edgesIgnoringSafeArea(.all)
+            }
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true) // Hide the back button
+            .overlay(
+                // Use a NavigationLink to switch to a different view after the delay
+                NavigationLink(
+                    destination: ContentView()
+                        .navigationBarHidden(true), // Hide the navigation bar in the destination view
+                    isActive: $isActive,
+                    label: { EmptyView() }
+                )
+            )
         }
+    }
 }
+
 public extension UIColor {
     convenience init(hex: UInt32, alpha: CGFloat = 1.0) {
         let red = CGFloat((hex & 0xFF0000) >> 16) / 255.0
@@ -30,6 +45,10 @@ public extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
-#Preview {
-    StartUpView()
+
+
+struct StartUpView_Previews: PreviewProvider {
+    static var previews: some View {
+        StartUpView()
+    }
 }

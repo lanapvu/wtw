@@ -14,7 +14,7 @@ struct ContentView: View {
                 .tag(1)
             MessagesView()
                 .tag(2)
-            Text("Tab Content 3")
+            CreatePostView()
                 .tag(3)
             SearchView()
                 .tag(4)

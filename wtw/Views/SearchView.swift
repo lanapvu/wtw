@@ -23,6 +23,7 @@ struct SearchView: View {
     }
 
     var body: some View {
+        
         NavigationView {
             VStack {
                 SearchBar(searchText: $searchText, isSearching: $isSearching, onCommit: {
@@ -35,9 +36,11 @@ struct SearchView: View {
             }
             .navigationTitle("Search")
         }
+        
         .onAppear {
             loadSearchHistory()
         }
+        
     }
 
     private func addToSearchHistory(_ query: String) {
