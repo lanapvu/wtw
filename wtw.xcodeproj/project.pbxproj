@@ -12,6 +12,10 @@
 		32523F282B0098610014251F /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F272B0098610014251F /* CreatePostView.swift */; };
 		32523F2A2B0098CE0014251F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F292B0098CE0014251F /* ProfileView.swift */; };
 		32523F2E2B009DBD0014251F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F2D2B009DBD0014251F /* MainView.swift */; };
+		32523F302B00A7F70014251F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F2F2B00A7F70014251F /* LoginView.swift */; };
+		32523F322B00A8170014251F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F312B00A8170014251F /* LoginViewController.swift */; };
+		32523F342B00A8350014251F /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F332B00A8350014251F /* SignupView.swift */; };
+		32523F362B00A86E0014251F /* CreateaccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F352B00A86E0014251F /* CreateaccountViewController.swift */; };
 		52462D362B00068B00B63921 /* wtwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D352B00068B00B63921 /* wtwApp.swift */; };
 		52462D382B00068B00B63921 /* StartUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D372B00068B00B63921 /* StartUpView.swift */; };
 		52462D3A2B00068D00B63921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462D392B00068D00B63921 /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 		32523F272B0098610014251F /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		32523F292B0098CE0014251F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		32523F2D2B009DBD0014251F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		32523F2F2B00A7F70014251F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		32523F312B00A8170014251F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32523F332B00A8350014251F /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		32523F352B00A86E0014251F /* CreateaccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateaccountViewController.swift; sourceTree = "<group>"; };
 		52462D322B00068B00B63921 /* wtw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wtw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52462D352B00068B00B63921 /* wtwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwApp.swift; sourceTree = "<group>"; };
 		52462D372B00068B00B63921 /* StartUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpView.swift; sourceTree = "<group>"; };
@@ -145,13 +153,17 @@
 			isa = PBXGroup;
 			children = (
 				52462D372B00068B00B63921 /* StartUpView.swift */,
+				32523F352B00A86E0014251F /* CreateaccountViewController.swift */,
 				52E604CD2B00185F00814C5F /* HomeView.swift */,
 				32523F1D2B00645C0014251F /* CustomTabBar.swift */,
 				52E604D52B004A8600814C5F /* MessagesView.swift */,
 				32523F1F2B008A830014251F /* SearchView.swift */,
 				32523F272B0098610014251F /* CreatePostView.swift */,
+				32523F332B00A8350014251F /* SignupView.swift */,
 				32523F292B0098CE0014251F /* ProfileView.swift */,
 				32523F2D2B009DBD0014251F /* MainView.swift */,
+				32523F312B00A8170014251F /* LoginViewController.swift */,
+				32523F2F2B00A7F70014251F /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,15 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32523F342B00A8350014251F /* SignupView.swift in Sources */,
 				32523F2A2B0098CE0014251F /* ProfileView.swift in Sources */,
 				32523F2E2B009DBD0014251F /* MainView.swift in Sources */,
 				52E604D62B004A8600814C5F /* MessagesView.swift in Sources */,
+				32523F362B00A86E0014251F /* CreateaccountViewController.swift in Sources */,
 				52E604CE2B00185F00814C5F /* HomeView.swift in Sources */,
 				32523F202B008A830014251F /* SearchView.swift in Sources */,
 				32523F282B0098610014251F /* CreatePostView.swift in Sources */,
 				52462D382B00068B00B63921 /* StartUpView.swift in Sources */,
 				32523F1E2B00645C0014251F /* CustomTabBar.swift in Sources */,
+				32523F302B00A7F70014251F /* LoginView.swift in Sources */,
 				52462D362B00068B00B63921 /* wtwApp.swift in Sources */,
+				32523F322B00A8170014251F /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
