@@ -66,4 +66,3 @@ struct CustomTabView_Previews: PreviewProvider {
             .padding(.vertical)
     }
 }
-
