@@ -21,8 +21,8 @@ struct MainView: View {
     // Sample posts data
     let posts: [Post] = [
         Post(category: "Hiking", username: "Lord", profilePictureName: "profile1", timePosted: "10 mins ago", message: "Hey guys! I'm going to mount sugarloaf soon on the B40 bus line. I'm leaving in 20 mins. Lmk if you want to come!", distance: "0.3 mi", priceCategory: "$"),
-        Post(category: "Food", username: "Hanabel", profilePictureName: "profile1", timePosted: "20", message: "Frank is my favorite dining hall, who's up for some frank dinner tn!", distance: "0.3 mi", priceCategory: "$"),
-        Post(category: "Movies", username: "Lana", profilePictureName: "profile2", timePosted: "20", message: "Barbie movie just came out! Does anyone wanna go watch it?", distance: "1 mi", priceCategory: "$"),
+        Post(category: "Food", username: "Hanabel", profilePictureName: "profile1", timePosted: "20 mins ago", message: "Frank is my favorite dining hall, who's up for some frank dinner tn!", distance: "0.3 mi", priceCategory: "$"),
+        Post(category: "Movies", username: "Lana", profilePictureName: "profile2", timePosted: "20 mins ago", message: "Barbie movie just came out! Does anyone wanna go watch it?", distance: "1 mi", priceCategory: "$"),
         // Add more Post instances here...
     ]
     
@@ -44,7 +44,7 @@ struct MainView: View {
         }
         .tabItem {
             Image(systemName: "house.fill")
-            Text("Home")
+            Text("")
         }
     }
 }
