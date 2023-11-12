@@ -16,8 +16,7 @@
 		52462D512B00068D00B63921 /* wtwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D502B00068D00B63921 /* wtwUITests.swift */; };
 		52462D532B00068D00B63921 /* wtwUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */; };
 		52E604CE2B00185F00814C5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604CD2B00185F00814C5F /* HomeView.swift */; };
-		52E604D02B001A7100814C5F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604CF2B001A7100814C5F /* ProfileView.swift */; };
-		52E604D22B001E1D00814C5F /* NewProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604D12B001E1D00814C5F /* NewProfileView.swift */; };
+		52E604D22B001E1D00814C5F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604D12B001E1D00814C5F /* ProfileView.swift */; };
 		52E604D62B004A8600814C5F /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604D52B004A8600814C5F /* MessagesView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +50,7 @@
 		52462D502B00068D00B63921 /* wtwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwUITests.swift; sourceTree = "<group>"; };
 		52462D522B00068D00B63921 /* wtwUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52E604CD2B00185F00814C5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		52E604CF2B001A7100814C5F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		52E604D12B001E1D00814C5F /* NewProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileView.swift; sourceTree = "<group>"; };
+		52E604D12B001E1D00814C5F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		52E604D52B004A8600814C5F /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +141,7 @@
 				52462D372B00068B00B63921 /* StartUpView.swift */,
 				52E604CD2B00185F00814C5F /* HomeView.swift */,
 				32523F1D2B00645C0014251F /* CustomTabBar.swift */,
-				52E604CF2B001A7100814C5F /* ProfileView.swift */,
-				52E604D12B001E1D00814C5F /* NewProfileView.swift */,
+				52E604D12B001E1D00814C5F /* ProfileView.swift */,
 				52E604D52B004A8600814C5F /* MessagesView.swift */,
 			);
 			path = Views;
@@ -280,8 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E604D22B001E1D00814C5F /* NewProfileView.swift in Sources */,
-				52E604D02B001A7100814C5F /* ProfileView.swift in Sources */,
+				52E604D22B001E1D00814C5F /* ProfileView.swift in Sources */,
 				52E604D62B004A8600814C5F /* MessagesView.swift in Sources */,
 				52E604CE2B00185F00814C5F /* HomeView.swift in Sources */,
 				52462D382B00068B00B63921 /* StartUpView.swift in Sources */,

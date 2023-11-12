@@ -12,13 +12,13 @@ struct ContentView: View {
         TabView(selection: $tabSelection) {
             Text("Tab Content 1")
                 .tag(1)
-            Text("Tab Content 2")
+            MessagesView()
                 .tag(2)
             Text("Tab Content 3")
                 .tag(3)
             Text("Tab Content 4")
                 .tag(4)
-            Text("Tab Content 5")
+            ProfileView()
                 .tag(5)
         }
         .overlay(alignment: .bottom){
