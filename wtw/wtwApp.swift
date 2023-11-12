@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct wtwApp: App {
     var body: some Scene {
         WindowGroup {

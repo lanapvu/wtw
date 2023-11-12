@@ -10,23 +10,51 @@ struct ContentView: View {
     @State private var tabSelection = 1
     
     var body: some View {
-        TabView(selection: $tabSelection) {
-            Text("Tab Content 1")
-                .tag(1)
-            Text("Tab Content 2")
-                .tag(2)
-            Text("Tab Content 3")
-                .tag(3)
-            Text("Tab Content 4")
-                .tag(4)
-            Text("Tab Content 5")
-                .tag(5)
-        }
-        .overlay(alignment: .bottom){
-            CustomTabView(tabSelection: $tabSelection)
+        NavigationView {
+                TabView {
+                    // Home tab
+                   Text("Home")
+                        .tabItem {
+                            Image(systemName: "house.fill")
+                            Text("Home")
+                        }
+                        .tag(0)
+                    //Messages tab
+                    MessagesView()
+                   .tabItem {
+                       Image(systemName: "message.fill")
+                       Text("Messages")
+                   }
+                    //Add tab
+                    Text("Add")
+                        .tabItem {
+                            Image(systemName: "plus")
+                            Text("Add")
+                        }
+                    // Settings tab
+                    Text("Settings")
+                        .tabItem {
+                            Image(systemName: "gear")
+                            Text("Settings")
+                        }
+                    
+                    
+
+                }
+                .tint(.white) // <- change the color of each tab icon
+                .onAppear {
+                    let tabBarAppearance = UITabBarAppearance()
+                    tabBarAppearance.backgroundColor = .red
+                    UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+                    
+                }
+            }
+            .navigationBarTitle("wtw")
+            
+
         }
     }
-}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
