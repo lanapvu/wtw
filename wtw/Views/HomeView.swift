@@ -10,7 +10,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $tabSelection) {
-            Text("Tab Content 1")
+            MainView()
                 .tag(1)
             MessagesView()
                 .tag(2)

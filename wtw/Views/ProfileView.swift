@@ -7,25 +7,25 @@
 import SwiftUI
 struct ProfileView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text("wtw")
-                    .font(.system(size: 40))
-                    .padding(.top, 0) // Move the text lower
-                    .padding(.leading, 40) // Move the text to the right
+        NavigationView {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("wtw")
+                        .font(.system(size: 40))
+                        .padding(.leading, 40)
+                    Spacer()
+                    NavigationLink("Log out", destination: LoginView())
+                        .foregroundColor(.green)
+                        .padding()
+                }
+                CircleImage()
                 Spacer()
-                Image(systemName: "gear")
-                    .font(.title)
-                    .offset(x:-40)
+                Interests()
+                Spacer()
             }
-            CircleImage()
-                .offset(CGSize(width: 10.0, height: 10.0))
-            Spacer()
-            Interests()
-                .offset(CGSize(width: 10.0, height: 10.0))
-            Spacer()
+            .navigationBarHidden(true)
+            .padding()
         }
-        
     }
 }
 struct CircleImage: View{

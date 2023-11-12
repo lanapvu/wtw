@@ -79,7 +79,7 @@ class CreateAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        setupActions()        
+        setupActions()
         setupButtonAction()
     }
     
