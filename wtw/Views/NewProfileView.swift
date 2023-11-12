@@ -89,8 +89,4 @@ struct InterestBubble: View {
     NewProfileView()
 }
 
-#Preview {
-    Interests()
-}
-
 
