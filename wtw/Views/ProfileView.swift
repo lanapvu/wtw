@@ -34,11 +34,12 @@ struct ProfileView: View {
 struct CircleImage: View{
     var body: some View {
         Image("profile")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 400, height: 100)
-            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-            .overlay(Circle().stroke(.gray, lineWidth:4))
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(Circle().stroke(.green, lineWidth:2))
+                    .padding(.leading,140)
         Text("Lord Custodio")
             .font(.system(size: 20))
             .padding(.leading, 130)
