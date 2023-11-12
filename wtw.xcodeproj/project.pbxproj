@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32523F1E2B00645C0014251F /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32523F1D2B00645C0014251F /* CustomTabBar.swift */; };
 		52462D362B00068B00B63921 /* wtwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D352B00068B00B63921 /* wtwApp.swift */; };
 		52462D382B00068B00B63921 /* StartUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52462D372B00068B00B63921 /* StartUpView.swift */; };
 		52462D3A2B00068D00B63921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462D392B00068D00B63921 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32523F1D2B00645C0014251F /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		52462D322B00068B00B63921 /* wtw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wtw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52462D352B00068B00B63921 /* wtwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wtwApp.swift; sourceTree = "<group>"; };
 		52462D372B00068B00B63921 /* StartUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				52462D372B00068B00B63921 /* StartUpView.swift */,
 				52E604CD2B00185F00814C5F /* HomeView.swift */,
+				32523F1D2B00645C0014251F /* CustomTabBar.swift */,
 				52E604CF2B001A7100814C5F /* ProfileView.swift */,
 				52E604D12B001E1D00814C5F /* NewProfileView.swift */,
 			);
@@ -278,6 +281,7 @@
 				52E604D02B001A7100814C5F /* ProfileView.swift in Sources */,
 				52E604CE2B00185F00814C5F /* HomeView.swift in Sources */,
 				52462D382B00068B00B63921 /* StartUpView.swift in Sources */,
+				32523F1E2B00645C0014251F /* CustomTabBar.swift in Sources */,
 				52462D362B00068B00B63921 /* wtwApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
