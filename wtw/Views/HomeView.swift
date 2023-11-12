@@ -16,7 +16,7 @@ struct ContentView: View {
                 .tag(2)
             Text("Tab Content 3")
                 .tag(3)
-            Text("Tab Content 4")
+            SearchView()
                 .tag(4)
             ProfileView()
                 .tag(5)

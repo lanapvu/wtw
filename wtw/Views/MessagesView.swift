@@ -17,7 +17,7 @@ struct Message: Identifiable {
 
 struct MessagesView: View {
     let messages = [
-        Message(sender: "Lord", body: "Hey, are you available for a meeting tomorrow at 2 PM?", dotColor: .yellow, imageName: "profile"),
+        Message(sender: "Lord", body: "So, about that airline food", dotColor: .yellow, imageName: "profile"),
         Message(sender: "Hanabel", body: "I heard frank was the vibe. Wanna go now? I can be there in like 10.", dotColor: .green, imageName: "profile1"),
         Message(sender: "Lana", body: "So what do you like to do for fun?", dotColor: .gray, imageName: "profile1"),
         Message(sender: "Danny", body: "uhhhhh so what now?", dotColor: .gray, imageName: "profile2"),
