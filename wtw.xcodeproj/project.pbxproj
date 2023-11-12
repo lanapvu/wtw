@@ -19,7 +19,6 @@
 		52E604D02B001A7100814C5F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604CF2B001A7100814C5F /* ProfileView.swift */; };
 		52E604D22B001E1D00814C5F /* NewProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604D12B001E1D00814C5F /* NewProfileView.swift */; };
 		52E604D62B004A8600814C5F /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604D52B004A8600814C5F /* MessagesView.swift */; };
-		52E604D82B0055D700814C5F /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E604D72B0055D700814C5F /* MessagingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +54,6 @@
 		52E604CF2B001A7100814C5F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		52E604D12B001E1D00814C5F /* NewProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileView.swift; sourceTree = "<group>"; };
 		52E604D52B004A8600814C5F /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
-		52E604D72B0055D700814C5F /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +146,6 @@
 				52E604CF2B001A7100814C5F /* ProfileView.swift */,
 				52E604D12B001E1D00814C5F /* NewProfileView.swift */,
 				52E604D52B004A8600814C5F /* MessagesView.swift */,
-				52E604D72B0055D700814C5F /* MessagingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 				52E604D22B001E1D00814C5F /* NewProfileView.swift in Sources */,
 				52E604D02B001A7100814C5F /* ProfileView.swift in Sources */,
 				52E604D62B004A8600814C5F /* MessagesView.swift in Sources */,
-				52E604D82B0055D700814C5F /* MessagingView.swift in Sources */,
 				52E604CE2B00185F00814C5F /* HomeView.swift in Sources */,
 				52462D382B00068B00B63921 /* StartUpView.swift in Sources */,
 				32523F1E2B00645C0014251F /* CustomTabBar.swift in Sources */,
