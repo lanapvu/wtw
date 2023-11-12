@@ -64,7 +64,11 @@ struct Interests:View{
         InterestBubble(text: "Dinner")
         }
         Spacer()
-        
+        NavigationLink("Log out", destination: LoginView())
+            .foregroundColor(.green)
+            .padding(.leading, 30)
+            .padding(.top, 270)
+            .navigationBarHidden(true)
     }
 }
 struct InterestBubble: View {
